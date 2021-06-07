@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700" rel="stylesheet">
+  <title>Módulo 3</title>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="header_content">
+      <header>
+        <h1>Projeto Módulo 3</h1>
+        <p>Desafio Feito para o curso Beginners da Facul iv2 por Dyego Almeida</p>
+      </header>
+    </div>
+
+    <div>
+      <button id="btnLimparTudo">Limpar</button>
+    </div>
+
+    <div class="main_content">
+      <main>
+        <!-- 1° Section ⇒ Retorno de um número fracionado em inteiro mais próximo (Dica: Math.round(x)); -->
+        <section class="main_section_retornaInteiro" id="retornaInteiro">
+          <h2>Retorna o Inteiro</h2>
+          <label>Digite um número Decimal</label>
+          <input type="number" name="numFracionado" id="numFracionado">
+          <button id="btnCalculaInteiro">Calcular</button>
+          <span id="numResultInteiro"></span>
+        </section>
+
+        <!-- 2° Section ⇒ Potência do Número do primeiro Input pelo do segundo Input (Dica: Math.pow(x, y)); -->
+        <section class="main_section_retornaPotencia" id="retornaPotencia">
+          <h2>Calcula Potência do Número</h2>
+          <label>Digite um número e a potência</label>
+          <input type="number" name="numX" id="numX">
+          <input type="number" name="numY" id="numY">
+          <button id="btnCalculaPotencia">Calcular</button>
+          <span id="numResultPotencia"></span>
+        </section>
+
+        <!--
+         3° Section ⇒ Cálculos referentes a medida de um Circulo:
+          - Medida da Circunferência de um Circulo (C = 2 * π * raio),
+          - Resultado do Cálculo da Área (A = π * r²);
+        -->
+        <section class="main_section_retornaMedidasCirculo" id="retornaMedidasCirculo">
+          <h2>Calcula a Circunferência e o Cálculo da Área de um Círculo</h2>
+          <label>Digite o raio</label>
+          <input type="number" name="numRaioCirCirculo" id="numRaioCirCirculo">
+          <button id="btnCalculaCirCirculo">Calcular</button>
+          <span id="numResultCirCirculo"></span>
+          <span id="numResultAreaCirculo"></span>
+        </section>
+
+        <!--     
+         4° Section ⇒ Calculos referentes a medida de um Cubo:
+         Área da Base (Ab = a²);
+         Área total (At = Ab * 6);
+         Volume do Cubo (Vt = a³); 
+        -->
+        <section class="main_section_retornaMedidasCubo" id="retornaMedidasCubo">
+          <h2>Calcula a Área Base, Total, e Volume de um Cubo</h2>
+          <label>Digite a área base</label>
+          <input type="number" name="numArestaCubo" id="numArestaCubo">
+          <button id="btnCalculaAreaBaseCubo">Calcular</button>
+          <span id="numResultAreaBase"></span>
+          <span id="numResultAreaTotal"></span>
+          <span id="numResultVolume"></span>
+        </section>
+
+        <!--
+         5° Section ⇒ Por sua conta, é isso mesmo, utilize o objeto Math para fazer algo sobre
+         Matemática que você ache bacana;
+        -->
+        <section class="main_section_retornaRaizQ" id="retornaRaizQ">
+          <h2>Calcula a Raiz Quadrada</h2>
+          <label>Digite um número</label>
+          <input type="number" name="numRaizQ" id="numRaizQ">
+          <button id="btnCalculaRaizQ">Calcular</button>
+          <span id="numResultCalcRaizQ"></span>
+        </section>
+
+      </main>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+
+</body>
+
+</html>
